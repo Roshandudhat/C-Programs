@@ -1,0 +1,15 @@
+excel formula : student
+    =if(i5>=70,"distiction",if(i5>=60,"first",if(i5>=50,"second",if(i5>=40,"pass","fail"))))
+
+discount: 
+    =if(and(e5>=25000,e5<=30000),e5*0.05,if(and(e5>=30000,e7<=35000),e5*0.1,if(and(e5>=35000,
+     e5<=40000),e5*0.15,if(e7>40000,e7*0.25))))
+profit: 
+	=if(c3<600,"0.05","0.10")
+bouns:
+	=if(and(d2<10),f2*0.1,if(and(d2>10,d2<36),f2*0.25,if(and(d2<36,d2
+      >60),f2*0.35,if(and(d2>60),f2*0.5))))
+bouns" 
+ 	=if(and(d2>=5000,d2<=10000),d2*0.1,if(and(d2>10000,d2<=15000),d2*0.2
+	,if(and(d2>15000(d2*0.4)))
+

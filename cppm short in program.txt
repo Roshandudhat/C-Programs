@@ -1,0 +1,420 @@
+1.sum of two number: c=a+b;
+2.find simple intrest: SI=P*R*N/100;
+3.maximum of two number: if(a>b)
+				 else if(b<a)
+				 else
+4.maximum of three number : if(a>b)
+						if(a>c)
+						else
+                            else
+      		                  if(b>c)
+						else
+5.print 1 to 100 number used for loop for	:	(i=1;i<=n;i++);
+								printf("\n%d",i);
+6.find area of circle: area = pi*r*r;
+7.positive or nagetive number : if(number>=0)
+				        else
+8.odd or even number: if(number %2==0)
+                       		odd
+         		  	else
+			     		even
+9.sum of any number : 	for(i=1;i<=n;i++)
+				{
+					sum=sum+i;
+				}
+10.sum of firstdigit and last digit :lastdigit=n%10;
+							while(n>9)
+								{
+									n=n/10;
+								}
+							firstdigit=n;
+							sum=firstdigit+ lastdigit;
+11.ASCII value of given number : printf("ACSLL value is %c character is a %d",ch,ch);
+12.lower character to upper character : c=ch-32;
+13.upper character to lower character : c=ch+32;
+14.find factorial of gievn number : for(i=1;i<=n;i++)
+						fact=fact*i;
+15.find square of given number : sqare=number*number;
+16.all arithmatic opretor :	sum=a+b;
+					sub=a-b;
+					mul=a*b;
+					div=a/b;
+17.all relational oprector : if(a==b)
+	 			     if(a<b)
+				     if(a>b)
+18.strncat using string function : strncat(dest,src,15);
+19.strchr using string function : ret=strchr(str,ch);
+20.strncmp using string function :	ret=strncmp(str1,str2,15);
+	if(ret<0)
+	else if(ret>0)
+	else
+21.strncpy using string function : memset(dest,'\0',sizeof(dest));
+						strcpy(src,"HELLO FRIENDS");
+						strncpy(dest,src,10);
+						printf("final copied string:%s\n",dest);
+22.strlen using string function : strcpy(str,"hello friend may name is roshan dudhat");
+					    len=strlen(str);
+					    printf("lenth of %s is %d",str,len);
+23.prime number or not prime number : for(i=1;i<=n;i++)
+						    {  if(n%i==0)
+                                           {  count++;  }
+						    }
+                                        if(count==2)
+                                        else
+24.armstrong number or not : i=n;
+					while(i!=0)
+					{
+						t=i%10;
+						number=t*t*t;
+						i/=10;
+						}
+					if(number==n)
+					else
+25.fibbonacci seriers : for(i=1;i<=n;i++)
+				{
+					n3=n1+n2;
+					printf("%d\t",n1);
+					n1=n2;
+					n2=n3;
+26.used micro :#define area(x)(3.14*x*x)
+			r1=6.25;
+			a=area(x)
+			printf("...%f\n",n);
+27.multification table : for(i=1;i<=10;i++)
+				{
+					printf("%d * %d = %d \n",n,i,n*i);
+28.cube of given number : c=n*n*n;
+29.inter change variable with out thied variable : a=a+b;
+								   b=a-b;
+								   a=a-b;
+30.logical opreter : if(age>=13 && age<=19)
+                     else
+31.assignment opreter : a-=b;
+32.sizeof opreter : printf("size is datatype %d",sizeof(value));
+33.ternary opreter : 	b=((a==a)?(3):(2)); 
+34.ceil using math function : result=ceil(num);
+35.floor using math function : realno1=54.543;
+					printf("floor value is a realno 1 %.1lf\n",floor(realno1));
+36.log using math function : result=log(n);
+					printf("nature value is a log %.2f is a %lf",n,result);
+37.chek leap year or not leap year: if((year%4==0) && (year%400==0) || (year%100!=0)
+						else
+38.polidrome numebr or not : temp=n;
+					while(n>0)
+					{
+						r=n%10;
+						sum=(sum*10)+r;
+						n=n/10;
+					 }
+					if(temp==sum)
+					else
+39.print 1 to 100 prime number : while(n<25)  
+    {  
+        j=1;  
+        ct=0;  
+        while(j<=i)  
+        {  
+            if(i%j==0)  
+            ct++;  
+            j++;   
+        }  
+        if(ct==2)  
+        {  
+            printf("%d\t",i);  
+            n++;  
+        }  
+        i++;  
+
+40.find character vowel or constnt : uv=(c=='A' || c=='E'|| c=='I'|| c=='O'|| c=='U');
+						lv=(c=='a'||c=='e'||c=='i'||c=='o'||c=='u');
+						if(uv||lv)
+						else
+41.print inverted half pyramid * * *
+					 * *
+					 *
+             for(i=rows;i>0;i++)
+		{  for(j=i;j>0;j--)
+			{  printf("*");  }
+               printf("\n");
+            }
+42.print right side in pyramid : *
+					   * *
+                                 * * *
+         for(i=1;i<=rows;++i)
+         {  for(j=1;.j<=i;++j) { printf("* "); }
+         printf("\n);
+         }
+43.inverted full pyramid :  	 *
+   					***
+  				     *****
+		for(i=1;i<=r;i++)
+		{  for(j=1;j<=r;i++)
+		   { printf(" "); }
+		for(k=1;k<=(2*i-1);k++)
+		   { printf("*"); }
+		printf("\n);
+		}
+44.half pyramid of number : 	1
+    					12
+    					123
+		for(i=1;i<=r;i++)
+            {  for(j=1;j<r;j++)
+			{ printf(" ");  }
+               for(k=1;j<=i;k++)
+                   { printf(" %d",&k); }
+		   printf("\n");
+		}
+45.floyd triangle : 1
+			  2 3
+			  4 5 6
+		for(i=1;i<=r;i++)
+		{   for(j=1;j<=i;j++)
+		    ( printf("%d",k); k+=1; }
+             printf("\n");
+             }
+46.number patten : 1 1 1
+			 2 2 2
+			 3 3 3
+ 		for(i=1;i<=n;i++)
+      	{  for(j=1;j<=n;j++)
+           		{ printf("%d",i); }
+             printf("\n");
+		}
+47.alphbets of half pyramid: 	A
+					B B
+					C C C
+             for(i=1;i<=r;i++)
+             {   for(j=1;j<=i;j++) 
+			{  printf("%c",'A'-1+i) }
+                  printf("\n");
+		  }
+ 48.alphbets of half pyramid : AAA
+					 BB
+					 C
+              for(i=1;i<=r;i++)
+		  {  for(j=r;j>=i;j--)
+                 { printf("%c",'A'-1+i)  }
+			printf("\n");
+		   }
+49.alphnets patten : 	A
+			 	A B
+ 				A B C
+ 				A B C D
+		  for(i='A';i<='D';i++)
+              {  for(j='A';j<=i;j++)
+                 { printf("%c",i); }
+		   printf("\n");
+               }
+50.A to Z alphbet series : for(i ='A';i<='Z';i++)
+					{ printf("%c",i); }
+                      
+51.pow using math function : 
+    result=pow(base,exp);
+	printf(" %d to the power of %d is = %d",base,exp,result);
+52.modf using math function : c=modf(a,&b);
+					printf("the calculate is : %lf\n\n",c);
+53.input &dispaly data from array:
+	int values[5];
+  	printf("Enter 5 integers: ");
+  	for(int i = 0; i < 5; ++i) 
+	{
+    	scanf("%d", &values[i]);
+  	}
+	printf("Displaying integers: ");
+  	for(int i = 0; i < 5; ++i) 
+	{
+    	printf("%d\n", values[i]);
+  	}
+54.input number & display numbe in ascending order.:
+	for(i=0;i<n;i++)
+	{	ptintf("\n enetr a %d value",i+1);
+		scanf("%d",&a[i]);
+	}	for(i=0;i<n;i++)
+		{	for(j=i;j<n;j++)
+			{	if(a[i]>a[j])
+				{	t=a[i];
+					a[i]=a[j];
+					a[j]=t;
+				}	
+			}		
+		}
+	for(i=0;i<n;i++)
+      printf("\n%d",a[i]);
+
+55.display matric 2*2: 
+	int a[2][2], i, j;
+    long determinant;
+
+    printf("\n\nEnter the 4 elements of the array\n");
+    for(i = 0; i < 2; i++)
+    for(j = 0; j < 2; j++)
+    scanf("%d", &a[i][j]);
+
+    printf("\n\nThe entered matrix is: \n\n");
+    for(i = 0; i < 2; i++)
+    {
+        for(j = 0; j < 2; j++)
+        {
+            printf("%d\t", a[i][j]); 
+        }
+        printf("\n"); 
+    }
+
+
+    determinant = a[0][0]*a[1][1] - a[1][0]*a[0][1];
+    printf("\n\nDterminant of 2x2 matrix is : %d - %d =  %d", a[0][0]*a[1][1], a[1][0]*a[0][1], determinant);
+
+
+56. display sum of two matrix : 
+		float a[2][2],b[2][2],c[2][2];
+	
+	int i,j;
+	printf("Enter the elements of first matrix \n :-");
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			printf("Enter a %d %d :-\n ",i+1,i+1);
+			scanf("%f",&a[i][j]);
+		}
+	}
+	printf("Enter the elements of 2nd matrix ");
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			printf("Enter b %d %d :- \n",i+1,j+1);
+			scanf("%f",&b[i][j]);
+		}
+	}
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			c[i][j]=a[i][j]+b[i][j];
+		}
+	}
+	printf("Sum of Matrix");
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			printf("\n%f\t",c[i][j]);
+			if(j==1)
+			printf("\n");
+		}
+	}
+57.multification of two matrix: 	int main(){  
+	int a[10][10],b[10][10],mul[10][10],r,c,i,j,k;    
+	system("cls");  
+	printf("enter the number of row=");    
+	scanf("%d",&r);    
+	printf("enter the number of column=");    
+	scanf("%d",&c);    
+	printf("enter the first matrix element=\n");    
+	for(i=0;i<r;i++)    
+	{    
+		for(j=0;j<c;j++)    
+		{    
+			scanf("%d",&a[i][j]);    
+		}    
+	}	    
+	printf("enter the second matrix element=\n");    
+	for(i=0;i<r;i++)    
+	{    
+		for(j=0;j<c;j++)    
+		{    
+			scanf("%d",&b[i][j]);    
+		}    
+	}    
+    
+	printf("multiply of the matrix=\n");    
+	for(i=0;i<r;i++)    
+	{    
+		for(j=0;j<c;j++)    
+	{    
+		mul[i][j]=0;    
+		for(k=0;k<c;k++)    
+		{    
+			mul[i][j]+=a[i][k]*b[k][j];    
+		}    
+	}    
+}    
+	for(i=0;i<r;i++)    
+
+	{    
+		for(j=0;j<c;j++)    
+		{    
+			printf("%d\t",mul[i][j]);    
+		}    
+		printf("\n");    
+	}    
+
+58.transpose matrix: 
+	int a[10][10],transpose[10][10],r,c,i,j;
+	printf("Enter rows and columns :-");
+	scanf("%d %d",&r,&c);
+	
+	printf("\nEnter matrix elements :-\n");
+	for(i=0;i<r;++i)
+	{
+		for(j=0;j<c;++j)
+		printf("Enter element a %d %d :-",i+1,j+1);
+		scanf("%d",&a[i][j]);
+	}
+	printf("\nEntered Matrix :\n");
+	for(i=0;i<r;++i)
+	for(j=0;j<c;++j)
+	{
+		printf("%d",a[i][j]);
+		if(j==c-1)
+		printf("\n");
+	}
+	for(i=0;i<r;++i)
+	for(j=0;j<c;++j)
+	{
+		transpose[j][i]=a[i][j];
+	}
+59.sum of 1 to 100 number : for(i=0;i<=100;i++)
+					{   sum =sum+i;
+					}  printf("sum of 1 to 100 number %d",sum);
+60.print patten alphbets: E
+				  D E
+				  C D E
+				  B C D E
+				  A B C D E
+    for(i=5;i>=1;i--)
+    {
+        for(j=i;j<=5;j++)
+        {
+            printf("%c ",'A' + j-1);
+        }
+        printf("\n");
+    }
+
+61.half pyramid of number :     5
+    					 44
+  					333
+ 				     2222
+				    11111
+
+	i=n;
+	
+	while(i>=1)
+	{
+		j=n;
+		k=i-1;
+		
+		while(j>=i)
+		{
+			while(k>0)
+			{
+				printf(" ");
+				k--;
+			}
+			printf("%d",i);
+			j--;
+		}
+		i--;
+		printf("\n");
+	}
